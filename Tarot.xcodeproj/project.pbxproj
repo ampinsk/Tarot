@@ -14,6 +14,12 @@
 		CF7C8DD429905E5A00917084 /* TarotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8DD329905E5A00917084 /* TarotTests.swift */; };
 		CF7C8DDE29905E5A00917084 /* TarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8DDD29905E5A00917084 /* TarotUITests.swift */; };
 		CF7C8DE029905E5A00917084 /* TarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8DDF29905E5A00917084 /* TarotUITestsLaunchTests.swift */; };
+		CF7C8DF52990789D00917084 /* NewSpiritTRIAL-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DEF2990789D00917084 /* NewSpiritTRIAL-Bold.otf */; };
+		CF7C8DF62990789D00917084 /* NewSpiritTRIAL-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DF02990789D00917084 /* NewSpiritTRIAL-Medium.otf */; };
+		CF7C8DF72990789D00917084 /* NewSpiritTRIAL-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DF12990789D00917084 /* NewSpiritTRIAL-Heavy.otf */; };
+		CF7C8DF82990789D00917084 /* NewSpiritTRIAL-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DF22990789D00917084 /* NewSpiritTRIAL-Regular.otf */; };
+		CF7C8DF92990789D00917084 /* NewSpiritTRIAL-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DF32990789D00917084 /* NewSpiritTRIAL-Light.otf */; };
+		CF7C8DFA2990789D00917084 /* NewSpiritTRIAL-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DF42990789D00917084 /* NewSpiritTRIAL-SemiBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,13 @@
 		CF7C8DD929905E5A00917084 /* TarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7C8DDD29905E5A00917084 /* TarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotUITests.swift; sourceTree = "<group>"; };
 		CF7C8DDF29905E5A00917084 /* TarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF7C8DEF2990789D00917084 /* NewSpiritTRIAL-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewSpiritTRIAL-Bold.otf"; sourceTree = "<group>"; };
+		CF7C8DF02990789D00917084 /* NewSpiritTRIAL-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewSpiritTRIAL-Medium.otf"; sourceTree = "<group>"; };
+		CF7C8DF12990789D00917084 /* NewSpiritTRIAL-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewSpiritTRIAL-Heavy.otf"; sourceTree = "<group>"; };
+		CF7C8DF22990789D00917084 /* NewSpiritTRIAL-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewSpiritTRIAL-Regular.otf"; sourceTree = "<group>"; };
+		CF7C8DF32990789D00917084 /* NewSpiritTRIAL-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewSpiritTRIAL-Light.otf"; sourceTree = "<group>"; };
+		CF7C8DF42990789D00917084 /* NewSpiritTRIAL-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewSpiritTRIAL-SemiBold.otf"; sourceTree = "<group>"; };
+		CF7C8DFB29907D4F00917084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +108,11 @@
 		CF7C8DC029905E5900917084 /* Tarot */ = {
 			isa = PBXGroup;
 			children = (
+				CF7C8DFB29907D4F00917084 /* Info.plist */,
 				CF7C8DC129905E5900917084 /* TarotApp.swift */,
 				CF7C8DC329905E5900917084 /* ContentView.swift */,
 				CF7C8DC529905E5A00917084 /* Assets.xcassets */,
+				CF7C8DEE2990789D00917084 /* New Spirit */,
 				CF7C8DC729905E5A00917084 /* Tarot.entitlements */,
 				CF7C8DC829905E5A00917084 /* Preview Content */,
 			);
@@ -127,6 +142,20 @@
 				CF7C8DDF29905E5A00917084 /* TarotUITestsLaunchTests.swift */,
 			);
 			path = TarotUITests;
+			sourceTree = "<group>";
+		};
+		CF7C8DEE2990789D00917084 /* New Spirit */ = {
+			isa = PBXGroup;
+			children = (
+				CF7C8DEF2990789D00917084 /* NewSpiritTRIAL-Bold.otf */,
+				CF7C8DF02990789D00917084 /* NewSpiritTRIAL-Medium.otf */,
+				CF7C8DF12990789D00917084 /* NewSpiritTRIAL-Heavy.otf */,
+				CF7C8DF22990789D00917084 /* NewSpiritTRIAL-Regular.otf */,
+				CF7C8DF32990789D00917084 /* NewSpiritTRIAL-Light.otf */,
+				CF7C8DF42990789D00917084 /* NewSpiritTRIAL-SemiBold.otf */,
+			);
+			name = "New Spirit";
+			path = "../../../Downloads/New Spirit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +262,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7C8DF52990789D00917084 /* NewSpiritTRIAL-Bold.otf in Resources */,
 				CF7C8DCA29905E5A00917084 /* Preview Assets.xcassets in Resources */,
+				CF7C8DF92990789D00917084 /* NewSpiritTRIAL-Light.otf in Resources */,
+				CF7C8DF72990789D00917084 /* NewSpiritTRIAL-Heavy.otf in Resources */,
+				CF7C8DF82990789D00917084 /* NewSpiritTRIAL-Regular.otf in Resources */,
 				CF7C8DC629905E5A00917084 /* Assets.xcassets in Resources */,
+				CF7C8DF62990789D00917084 /* NewSpiritTRIAL-Medium.otf in Resources */,
+				CF7C8DFA2990789D00917084 /* NewSpiritTRIAL-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +454,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tarot/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,6 +493,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tarot/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
