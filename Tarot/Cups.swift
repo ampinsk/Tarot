@@ -10,10 +10,16 @@ import SwiftUI
 struct Cups: View {
     let tarot = TarotInfo()
     var body: some View {
-        List(tarot.tarotData) { tarot in
-            if tarot.category == "Cups" {
-                Card(tarot: tarot)
+        ScrollView {
+            VStack(alignment: .leading) {
+                ForEach(tarot.tarotData) { tarot in
+                    if tarot.category == "Cups" {
+                        Card(tarot: tarot)
+                            .padding(20.0)
+                    }
+                }
             }
+            .padding(20.0)
         }
     }
 }
