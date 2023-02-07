@@ -20,6 +20,10 @@
 		CF7C8DF82990789D00917084 /* NewSpiritTRIAL-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DF22990789D00917084 /* NewSpiritTRIAL-Regular.otf */; };
 		CF7C8DF92990789D00917084 /* NewSpiritTRIAL-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DF32990789D00917084 /* NewSpiritTRIAL-Light.otf */; };
 		CF7C8DFA2990789D00917084 /* NewSpiritTRIAL-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DF42990789D00917084 /* NewSpiritTRIAL-SemiBold.otf */; };
+		CF7C8DFD29908AF600917084 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8DFC29908AF600917084 /* Card.swift */; };
+		CF7C8DFF29908CC500917084 /* Tarot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8DFE29908CC500917084 /* Tarot.swift */; };
+		CF7C8E032991E19D00917084 /* MajorArcana.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8E022991E19D00917084 /* MajorArcana.swift */; };
+		CF7C8E052991E82200917084 /* Cups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8E042991E82200917084 /* Cups.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		CF7C8DF32990789D00917084 /* NewSpiritTRIAL-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewSpiritTRIAL-Light.otf"; sourceTree = "<group>"; };
 		CF7C8DF42990789D00917084 /* NewSpiritTRIAL-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewSpiritTRIAL-SemiBold.otf"; sourceTree = "<group>"; };
 		CF7C8DFB29907D4F00917084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CF7C8DFC29908AF600917084 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CF7C8DFE29908CC500917084 /* Tarot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarot.swift; sourceTree = "<group>"; };
+		CF7C8E022991E19D00917084 /* MajorArcana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorArcana.swift; sourceTree = "<group>"; };
+		CF7C8E042991E82200917084 /* Cups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cups.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,10 @@
 				CF7C8DFB29907D4F00917084 /* Info.plist */,
 				CF7C8DC129905E5900917084 /* TarotApp.swift */,
 				CF7C8DC329905E5900917084 /* ContentView.swift */,
+				CF7C8E022991E19D00917084 /* MajorArcana.swift */,
+				CF7C8E042991E82200917084 /* Cups.swift */,
+				CF7C8DFC29908AF600917084 /* Card.swift */,
+				CF7C8DFE29908CC500917084 /* Tarot.swift */,
 				CF7C8DC529905E5A00917084 /* Assets.xcassets */,
 				CF7C8DEE2990789D00917084 /* New Spirit */,
 				CF7C8DC729905E5A00917084 /* Tarot.entitlements */,
@@ -294,8 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7C8DFF29908CC500917084 /* Tarot.swift in Sources */,
 				CF7C8DC429905E5900917084 /* ContentView.swift in Sources */,
 				CF7C8DC229905E5900917084 /* TarotApp.swift in Sources */,
+				CF7C8E032991E19D00917084 /* MajorArcana.swift in Sources */,
+				CF7C8E052991E82200917084 /* Cups.swift in Sources */,
+				CF7C8DFD29908AF600917084 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

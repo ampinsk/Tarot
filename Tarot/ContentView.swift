@@ -8,38 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    let tarot = TarotInfo()
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            Spacer()
-            Text("The")
-                .font(.custom("NewSpiritTRIAL-Regular", size: 16))
-            Text("Fool")
-                .font(.custom("NewSpiritTRIAL-SemiBold", size: 36))
-            Spacer()
-            HStack() {
-                Text("1")
-                    .font(.custom("NewSpiritTRIAL-Regular", size: 86))
-                Spacer()
-                VStack(alignment: .leading, spacing: 12.0) {
-                    Text("New beginnings, innocence, adventure")
-                        .font(.custom("NewSpiritTRIAL-Regular", size: 12))
-                    Text("Recklessness, fearlessness, risk")
-                        .font(.custom("NewSpiritTRIAL-Regular", size: 12))
+        NavigationView {
+            List() {
+                NavigationLink(destination: MajorArcana() ) {
+                    Text("Major Arcana")
                 }
-                .frame(width: 150.0)
+                NavigationLink(destination: Cups() ) {
+                    Text("Cups")
+                }
+                NavigationLink(destination: MajorArcana() ) {
+                    Text("Wands")
+                }
+                NavigationLink(destination: MajorArcana() ) {
+                    Text("Swords")
+                }
+                NavigationLink(destination: MajorArcana() ) {
+                    Text("Pentacles")
+                }
             }
+            .navigationTitle("Tarot")
         }
-        .foregroundColor(.white)
-        .frame(width: 240.0, height: 400.0)
-        .padding(50)
-        .background(Color(.red))
-        .clipShape(RoundedRectangle(cornerRadius: 40, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 30, style: .continuous)
-            .stroke(.white)
-            .padding()
-        )
-        .shadow(radius: 10)
     }
 }
 
