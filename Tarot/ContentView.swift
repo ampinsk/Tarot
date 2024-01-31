@@ -19,18 +19,19 @@ struct ContentView: View {
                 ScrollView {
                     Text("Look up a Tarot meaning")
                         .foregroundColor(.white)
-                        .font(.custom("NewSpiritTRIAL-SemiBold", size: 36))
+                        .font(.custom("NewSpiritTRIAL-SemiBold", size: 40))
                     NavigationLink(destination: MajorArcana() ) {
                         NavItem(
                             buttonText: "Major Arcana",
                             Major: true,
                             NavColor: Color.gray
-                        )
+                        ).rotationEffect(Angle(degrees: 4))
+                            .padding(.bottom, 10)
                     }
                     LazyVGrid(columns: [
-                        GridItem(.flexible(), spacing: -70),
+                        GridItem(.flexible(), spacing: -30),
                         GridItem()
-                    ], spacing: 10) {
+                    ], spacing: 20) {
                         
                         NavigationLink(destination: Cups() ) {
                             NavItem(
@@ -38,6 +39,7 @@ struct ContentView: View {
                                 Major: false,
                                 NavColor: Color.blue
                             )
+                            .rotationEffect(.degrees(-4))
                         }
                         NavigationLink(destination: MajorArcana() ) {
                             NavItem(
@@ -45,6 +47,7 @@ struct ContentView: View {
                                 Major: false,
                                 NavColor: Color.yellow
                             )
+                            .rotationEffect(.degrees(10))
                         }
                         NavigationLink(destination: MajorArcana() ) {
                             NavItem(
@@ -52,6 +55,7 @@ struct ContentView: View {
                                 Major: false,
                                 NavColor: Color.green
                             )
+                            .rotationEffect(.degrees(5))
                         }
                         NavigationLink(destination: MajorArcana() ) {
                             NavItem(
@@ -59,6 +63,7 @@ struct ContentView: View {
                                 Major: false,
                                 NavColor: Color.red
                             )
+                            .rotationEffect(.degrees(-7))
                         }
                         
                     }
