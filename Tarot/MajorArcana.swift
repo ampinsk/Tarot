@@ -9,17 +9,36 @@ import SwiftUI
 
 struct MajorArcana: View {
     let tarot = TarotInfo()
+    @State private var selectedTarot: Tarot?
+    
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                ForEach(tarot.tarotData) { tarot in
-                    if tarot.category == "Major Arcana" {
-                        Card(tarot: tarot)
-                            .padding(20.0)
+        NavigationView {
+            ScrollView {
+                Text("Major Arcana")
+                    .foregroundColor(.white)
+                    .font(.custom("NewSpiritTRIAL-SemiBold", size: 40))
+                    .multilineTextAlignment(.center)
+                    .padding(.top)
+                LazyVGrid(columns: [
+                    GridItem(),
+                    GridItem(),
+                    GridItem()
+                ], spacing: 20) {
+                    ForEach(tarot.tarotData) { tarot in
+                        if tarot.category == "Major Arcana" {
+                            NavigationLink(
+                                destination: Card(tarot: tarot),
+                                tag: tarot,
+                                selection: $selectedTarot
+                            ){
+                                SmallCard(tarot: tarot)
+                            }
+                        }
                     }
                 }
+                .padding(30.0)
             }
-            .padding(20.0)
+            .background(Color.black)
         }
     }
 }

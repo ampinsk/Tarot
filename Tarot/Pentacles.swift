@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Cups: View {
+struct Pentacles: View {
     let tarot = TarotInfo()
     @State private var selectedTarot: Tarot?
     
     var body: some View {
         NavigationView {
             ScrollView {
-                Text("Cups")
+                Text("Pentacles")
                     .foregroundColor(.white)
                     .font(.custom("NewSpiritTRIAL-SemiBold", size: 40))
                     .multilineTextAlignment(.center)
@@ -25,7 +25,7 @@ struct Cups: View {
                     GridItem()
                 ], spacing: 20) {
                     ForEach(tarot.tarotData) { tarot in
-                        if tarot.category == "Cups" {
+                        if tarot.category == "Pentacles" {
                             NavigationLink(
                                 destination: Card(tarot: tarot),
                                 tag: tarot,
@@ -43,9 +43,9 @@ struct Cups: View {
     }
 }
 
-struct Cups_Previews: PreviewProvider {
+struct Pentacles_Previews: PreviewProvider {
     static var previews: some View {
-        Cups()
+        Pentacles()
             .previewDevice("iPhone 14 Pro")
     }
 }

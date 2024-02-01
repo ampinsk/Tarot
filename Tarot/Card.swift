@@ -64,7 +64,7 @@ struct Card: View {
         )
         .animation(.spring(response: 0.4, dampingFraction: 0.6), value: press)
         .gesture(
-            LongPressGesture(minimumDuration: 0.5)
+            LongPressGesture(minimumDuration: 0.2)
                 .updating($press) { currentState, gestureState, transaction in
                     gestureState = currentState
                 }

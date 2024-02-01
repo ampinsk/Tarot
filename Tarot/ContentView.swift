@@ -17,9 +17,10 @@ struct ContentView: View {
                 Color.black
                     .ignoresSafeArea()
                 ScrollView {
-                    Text("Look up a Tarot meaning")
+                    Text("Look up a Tarot card")
                         .foregroundColor(.white)
                         .font(.custom("NewSpiritTRIAL-SemiBold", size: 40))
+                        .multilineTextAlignment(.center)
                     NavigationLink(destination: MajorArcana() ) {
                         NavItem(
                             buttonText: "Major Arcana",
@@ -41,7 +42,7 @@ struct ContentView: View {
                             )
                             .rotationEffect(.degrees(-4))
                         }
-                        NavigationLink(destination: MajorArcana() ) {
+                        NavigationLink(destination: Pentacles() ) {
                             NavItem(
                                 buttonText: "Pentacles",
                                 Major: false,
@@ -49,7 +50,7 @@ struct ContentView: View {
                             )
                             .rotationEffect(.degrees(10))
                         }
-                        NavigationLink(destination: MajorArcana() ) {
+                        NavigationLink(destination: Wands() ) {
                             NavItem(
                                 buttonText: "Wands",
                                 Major: false,
@@ -57,7 +58,7 @@ struct ContentView: View {
                             )
                             .rotationEffect(.degrees(5))
                         }
-                        NavigationLink(destination: MajorArcana() ) {
+                        NavigationLink(destination: Swords() ) {
                             NavItem(
                                 buttonText: "Swords",
                                 Major: false,
@@ -65,11 +66,10 @@ struct ContentView: View {
                             )
                             .rotationEffect(.degrees(-7))
                         }
-                        
                     }
                 }
             }
-        }
+        }.transition(.slide)
     }
 }
 

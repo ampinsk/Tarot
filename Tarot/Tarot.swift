@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Tarot: Identifiable {
+struct Tarot: Identifiable, Hashable {
     let id = UUID()
     let name: String
     let number: String
@@ -18,6 +18,10 @@ struct Tarot: Identifiable {
     let background: String
     let foreground: String
     let category: String
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 class TarotInfo {
@@ -86,6 +90,42 @@ class TarotInfo {
       foreground: "Gold",
       category: "Major Arcana" ),
     Tarot(
+      name: "Chariot",
+      number: "7",
+      the: "The",
+      regular: "Direction, control, willpower",
+      reverse: "Directionless, lack of control",
+      background: "Gray",
+      foreground: "White",
+      category: "Major Arcana" ),
+    Tarot(
+      name: "Strength",
+      number: "8",
+      the: "",
+      regular: "Direction, control, willpower",
+      reverse: "Directionless, lack of control",
+      background: "Gray",
+      foreground: "White",
+      category: "Major Arcana" ),
+    Tarot(
+      name: "Hermit",
+      number: "9",
+      the: "The",
+      regular: "Direction, control, willpower",
+      reverse: "Directionless, lack of control",
+      background: "Gray",
+      foreground: "White",
+      category: "Major Arcana" ),
+    Tarot(
+      name: "Wheel of Fortune",
+      number: "10",
+      the: "The",
+      regular: "Direction, control, willpower",
+      reverse: "Directionless, lack of control",
+      background: "Gray",
+      foreground: "White",
+      category: "Major Arcana" ),
+    Tarot(
       name: "Cups",
       number: "A",
       the: "",
@@ -109,8 +149,8 @@ class TarotInfo {
       the: "",
       regular: "Happiness, fulfillment, new beginnings",
       reverse: "Anguish, end of a relationship, bad news",
-      background: "Navy",
-      foreground: "Gold",
+      background: "Red",
+      foreground: "White",
       category: "Swords" ),
     Tarot(
       name: "Pentacles",
@@ -118,8 +158,8 @@ class TarotInfo {
       the: "",
       regular: "Happiness, fulfillment, new beginnings",
       reverse: "Anguish, end of a relationship, bad news",
-      background: "Navy",
-      foreground: "Gold",
+      background: "Yellow",
+      foreground: "Black",
       category: "Pentacles" ),
     
   ]

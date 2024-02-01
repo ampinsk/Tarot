@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CF228A2E2B69CDF3001F2747 /* NavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF228A2D2B69CDF3001F2747 /* NavItem.swift */; };
+		CF76644C2B6B18F600D6E2FC /* SmallCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76644B2B6B18F500D6E2FC /* SmallCard.swift */; };
+		CF7664502B6B231E00D6E2FC /* Wands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76644F2B6B231E00D6E2FC /* Wands.swift */; };
+		CF7664522B6B237E00D6E2FC /* Pentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7664512B6B237E00D6E2FC /* Pentacles.swift */; };
+		CF7664542B6B23A000D6E2FC /* Swords.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7664532B6B23A000D6E2FC /* Swords.swift */; };
 		CF7C8DC229905E5900917084 /* TarotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8DC129905E5900917084 /* TarotApp.swift */; };
 		CF7C8DC429905E5900917084 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7C8DC329905E5900917084 /* ContentView.swift */; };
 		CF7C8DC629905E5A00917084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7C8DC529905E5A00917084 /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 
 /* Begin PBXFileReference section */
 		CF228A2D2B69CDF3001F2747 /* NavItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavItem.swift; sourceTree = "<group>"; };
+		CF76644B2B6B18F500D6E2FC /* SmallCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCard.swift; sourceTree = "<group>"; };
+		CF76644F2B6B231E00D6E2FC /* Wands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wands.swift; sourceTree = "<group>"; };
+		CF7664512B6B237E00D6E2FC /* Pentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pentacles.swift; sourceTree = "<group>"; };
+		CF7664532B6B23A000D6E2FC /* Swords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swords.swift; sourceTree = "<group>"; };
 		CF7C8DBE29905E5900917084 /* Tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7C8DC129905E5900917084 /* TarotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotApp.swift; sourceTree = "<group>"; };
 		CF7C8DC329905E5900917084 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,7 +131,11 @@
 				CF7C8DC329905E5900917084 /* ContentView.swift */,
 				CF7C8E022991E19D00917084 /* MajorArcana.swift */,
 				CF7C8E042991E82200917084 /* Cups.swift */,
+				CF76644F2B6B231E00D6E2FC /* Wands.swift */,
+				CF7664512B6B237E00D6E2FC /* Pentacles.swift */,
+				CF7664532B6B23A000D6E2FC /* Swords.swift */,
 				CF7C8DFC29908AF600917084 /* Card.swift */,
+				CF76644B2B6B18F500D6E2FC /* SmallCard.swift */,
 				CF228A2D2B69CDF3001F2747 /* NavItem.swift */,
 				CF7C8DFE29908CC500917084 /* Tarot.swift */,
 				CF7C8DC529905E5A00917084 /* Assets.xcassets */,
@@ -313,8 +325,12 @@
 				CF7C8DC229905E5900917084 /* TarotApp.swift in Sources */,
 				CF7C8E032991E19D00917084 /* MajorArcana.swift in Sources */,
 				CF7C8E052991E82200917084 /* Cups.swift in Sources */,
+				CF7664502B6B231E00D6E2FC /* Wands.swift in Sources */,
+				CF7664542B6B23A000D6E2FC /* Swords.swift in Sources */,
+				CF76644C2B6B18F600D6E2FC /* SmallCard.swift in Sources */,
 				CF228A2E2B69CDF3001F2747 /* NavItem.swift in Sources */,
 				CF7C8DFD29908AF600917084 /* Card.swift in Sources */,
+				CF7664522B6B237E00D6E2FC /* Pentacles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +508,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AmandaPinsker.Tarot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,7 +548,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AmandaPinsker.Tarot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
